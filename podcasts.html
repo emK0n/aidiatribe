@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcasts — AI Diatribe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="branding/mark-on-black.png">
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <header class="top-bar">
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+            <span></span><span></span><span></span>
+        </button>
+        <a href="index.html" class="top-bar-logo">
+            <img src="branding/logo-horizontal-light.png" alt="AI Diatribe" class="top-bar-logo-img">
+        </a>
+        <a href="https://www.youtube.com/@AIDiatribe" target="_blank" class="top-bar-cta">Subscribe</a>
+    </header>
+
+    <div class="menu-overlay" id="overlay"></div>
+    <nav class="menu-panel" id="menuPanel">
+        <div class="menu-links">
+            <a href="index.html" class="menu-link">Home</a>
+            <a href="videos.html" class="menu-link">Watch</a>
+            <a href="podcasts.html" class="menu-link">Listen</a>
+            <a href="speakers.html" class="menu-link">Guests</a>
+            <a href="#" class="menu-link">Articles</a>
+            <a href="about.html" class="menu-link">About</a>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <span class="page-tag">Listen</span>
+        <h1 class="page-title">Podcast</h1>
+        <p class="page-subtitle">
+            Listen to AI Diatribe on your favorite podcast platform. Available on Spotify,
+            Apple Podcasts, Amazon Music, and more.
+        </p>
+    </header>
+
+    <!-- Podcast Hero -->
+    <section class="podcast-hero">
+        <!-- Main Spotify Embed -->
+        <div class="spotify-wrapper">
+            <div class="spotify-header">
+                <svg class="spotify-logo" viewBox="0 0 24 24">
+                    <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                </svg>
+                <span class="spotify-title">Listen on Spotify</span>
+            </div>
+            <div class="spotify-embed">
+                <iframe
+                    src="https://open.spotify.com/embed/show/0l8SimJ733T5ivx2kBMBPG?utm_source=generator&theme=0"
+                    width="100%" height="352"
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Platform Links -->
+        <p class="platform-text">Check out all our episodes from your favorite provider:</p>
+
+        <div class="platform-grid">
+            <a href="https://open.spotify.com/show/0l8SimJ733T5ivx2kBMBPG" target="_blank" class="platform-card">
+                <div class="platform-icon spotify">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.66 0 12 0zm5.521 17.34c-.24.359-.66.48-1.021.24-2.82-1.74-6.36-2.101-10.561-1.141-.418.122-.779-.179-.899-.539-.12-.421.18-.78.54-.9 4.56-1.021 8.52-.6 11.64 1.32.42.18.479.659.301 1.02zm1.44-3.3c-.301.42-.841.6-1.262.3-3.239-1.98-8.159-2.58-11.939-1.38-.479.12-1.02-.12-1.14-.6-.12-.48.12-1.021.6-1.141C9.6 9.9 15 10.561 18.72 12.84c.361.181.54.78.241 1.2zm.12-3.36C15.24 8.4 8.82 8.16 5.16 9.301c-.6.179-1.2-.181-1.38-.721-.18-.601.18-1.2.72-1.381 4.26-1.26 11.28-1.02 15.721 1.621.539.3.719 1.02.419 1.56-.299.421-1.02.599-1.559.3z"/>
+                    </svg>
+                </div>
+                <div class="platform-info">
+                    <h3>Spotify</h3>
+                    <p>Stream all episodes free</p>
+                </div>
+            </a>
+
+            <a href="https://podcasts.apple.com/us/podcast/ai-diatribe/id1814481724" target="_blank" class="platform-card">
+                <div class="platform-icon apple">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M5.34 0A5.328 5.328 0 000 5.34v13.32A5.328 5.328 0 005.34 24h13.32A5.328 5.328 0 0024 18.66V5.34A5.328 5.328 0 0018.66 0H5.34zm6.525 2.568c2.336 0 4.448.902 6.056 2.587 1.224 1.272 1.912 2.619 2.264 4.392.12.59-.333 1.146-.932 1.146h-.005c-.53 0-.988-.403-1.068-.928-.272-1.396-.82-2.468-1.783-3.468-1.297-1.37-2.986-2.12-4.763-2.12-3.709 0-6.729 3.02-6.729 6.729 0 1.178.293 2.28.82 3.242.526.96 1.268 1.782 2.148 2.372 1.012.68 2.122 1.05 3.378 1.166.516.048.906.49.906 1.009v.009c0 .568-.461 1.031-1.029 1.031h-.096c-1.621-.15-3.072-.669-4.348-1.548-1.216-.84-2.176-1.907-2.867-3.173-.694-1.267-1.047-2.677-1.047-4.197 0-4.778 3.887-8.664 8.665-8.664.24 0 .48.012.715.034zm.084 3.727c1.306 0 2.5.477 3.446 1.37.903.855 1.459 2.003 1.59 3.276.063.556-.35 1.05-.907 1.114-.562.062-1.06-.351-1.123-.907-.078-.7-.372-1.313-.849-1.79-.544-.544-1.237-.82-2.057-.82-1.645 0-2.984 1.339-2.984 2.984 0 .862.366 1.654.975 2.207.303.275.483.657.483 1.058v.005c0 .614-.505 1.111-1.119 1.111-.284 0-.553-.107-.76-.301-.92-.83-1.472-2.036-1.472-3.356 0-2.564 2.086-4.65 4.65-4.65.043 0 .084 0 .127.003zm-.205 4.246c.822 0 1.489.667 1.489 1.489v5.42c0 .822-.667 1.489-1.489 1.489-.821 0-1.488-.667-1.488-1.489v-5.42c0-.822.667-1.489 1.488-1.489z"/>
+                    </svg>
+                </div>
+                <div class="platform-info">
+                    <h3>Apple Podcasts</h3>
+                    <p>Subscribe on Apple</p>
+                </div>
+            </a>
+
+            <a href="https://music.amazon.com/podcasts/37a7bf50-4961-436f-966b-8f91a7cce7dc/ai-diatribe" target="_blank" class="platform-card">
+                <div class="platform-icon amazon">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a17.617 17.617 0 01-10.951-.065 17.12 17.12 0 01-5.72-3.2c-.09-.09-.12-.18-.09-.27l.09-.13.184-.205zM12 2c5.523 0 10 4.477 10 10 0 3.526-1.827 6.624-4.586 8.407-.387.25-.553.06-.415-.29.547-1.4.843-2.917.843-4.507 0-5.7-3.763-10.53-8.953-12.138A10.027 10.027 0 0112 2z"/>
+                    </svg>
+                </div>
+                <div class="platform-info">
+                    <h3>Amazon Music</h3>
+                    <p>Listen with Alexa</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-brand-name">AI <span>Diatribe</span></div>
+                <p class="footer-desc">Sharp insights and bold takes on the future of artificial intelligence.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Content</h4>
+                <a href="videos.html">Episodes</a>
+                <a href="podcasts.html">Podcasts</a>
+                <a href="#">Articles</a>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <a href="https://www.youtube.com/@AIDiatribe" target="_blank">YouTube</a>
+                <a href="https://open.spotify.com/show/0l8SimJ733T5ivx2kBMBPG" target="_blank">Spotify</a>
+                <a href="https://podcasts.apple.com/us/podcast/ai-diatribe/id1814481724" target="_blank">Apple</a>
+            </div>
+            <div class="footer-col">
+                <h4>More</h4>
+                <a href="speakers.html">Our Guests</a>
+                <a href="about.html">About Us</a>
+                <a href="mailto:contact@aidiatribe.com">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 AI Diatribe. All rights reserved.</div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const menuPanel = document.getElementById('menuPanel');
+        const overlay = document.getElementById('overlay');
+        function toggleMenu() {
+            hamburger.classList.toggle('active');
+            menuPanel.classList.toggle('active');
+            overlay.classList.toggle('active');
+            document.body.style.overflow = menuPanel.classList.contains('active') ? 'hidden' : '';
+        }
+        hamburger.addEventListener('mouseenter', () => {
+            if (!menuPanel.classList.contains('active')) toggleMenu();
+        });
+        menuPanel.addEventListener('mouseleave', (e) => {
+            if (!menuPanel.contains(e.relatedTarget) && menuPanel.classList.contains('active')) toggleMenu();
+        });
+        overlay.addEventListener('click', toggleMenu);
+        hamburger.addEventListener('click', toggleMenu);
+        document.querySelectorAll('.menu-link').forEach(l => l.addEventListener('click', () => { if (menuPanel.classList.contains('active')) toggleMenu(); }));
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menuPanel.classList.contains('active')) toggleMenu(); });
+    </script>
+</body>
+</html>
